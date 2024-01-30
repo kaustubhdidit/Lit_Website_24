@@ -1,13 +1,52 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React</title>
-  </head>
-  <body>
-    <div id="root"></div>
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite + React</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./src/index.css">
+</head>
+
+<body style="background-image: linear-gradient(to right, rgb(55, 65, 81), rgb(17, 24, 39), rgb(0, 0, 0));">
+  <div id="loader">
+    <h1>HBTU</h1>
+    <h1>HUNKAAAR</h1>
+    <h1>2k24</h1>
+  </div>
+  <div id="root">
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const loader = document.getElementById("loader");
+        const mainContent = document.getElementById("root");
+        loader.addEventListener("animationend", function () {
+          // Hide the loader with a slow fade-out
+          loader.style.animation = "fadeOut 3s ease-out forwards";
+
+          // Show the main content after the fade-out
+          setTimeout(() => {
+            loader.style.display = "none";
+            mainContent.style.display = "block";
+          }, 2000);
+        });
+      });
+    </script>
     <script type="module" src="/src/main.jsx"></script>
-  </body>
+  </div>
+  <style>
+    @keyframes fadeOut {
+      0% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 0;
+        display: none;
+      }
+    }
+  </style>
+</body>
+
 </html>
