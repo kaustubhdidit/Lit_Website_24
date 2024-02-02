@@ -11,11 +11,13 @@ function Header() {
 
   return (
     <>
-      <header className="rounded-xl shadow sticky z-50 top-0 bg-gradient-to-b from-gray-900 to-gray-600">
+      <header className="rounded-xl shadow sticky z-50 top-0 bg-gradient-to-b from-orange-400 to-orange-100">
         <nav className="border-gray-200 px-4 lg:px-6 py-2.5 sm:flex-wrap">
           <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
             <Link to="/" className="flex items-center">
-              <h1 className="text-2xl text-orange-400 font-bold">Hunkaar</h1>
+              <h1 className="text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl text-black font-bold">
+                Hunkaar
+              </h1>
             </Link>
             <div className="lg:hidden">
               <button
@@ -37,7 +39,7 @@ function Header() {
                     to="/"
                     className={({ isActive }) =>
                       `block py-2 pr-4 pl-3 duration-200 ${
-                        isActive ? "text-orange-700" : "text-grey-700 "
+                        isActive ? "text-blue-700" : "text-grey-700 "
                       } border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
                     }
                   >

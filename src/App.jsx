@@ -1,13 +1,15 @@
-import Header from './Components/Aditya_Work/Header/Header'
-import './App.css'
+import Header from "./Components/Aditya_Work/Header/Header";
+import "./App.css";
+import Home from "./Components/Aditya_Work/Home/Home";
 
 function App() {
-
   return (
     <>
-      <Header/>
+      <Header />
+      <Home />
+      {/* <Footer /> */}
     </>
-  )
+  );
 }
 
-export default App
+export default App;
