@@ -7,6 +7,7 @@ import About from "./Components/Aditya_Work/About/About.jsx";
 import Sponsors from "./Components/Aditya_Work/Sponsors/Sponsors.jsx";
 import Merch from "./Components/Aditya_Work/Merchndise/Merch.jsx";
 import Team from "./Components/Aditya_Work/Team/Team.jsx";
+import Adlog from "./Components/Kaustubh_Work/adlog.jsx";
 import Event from "./Components/Aditya_Work/Event/Event.jsx";
 import Admin from "./Components/Aditya_Work/Admin_low_access/Admin.jsx";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
@@ -43,7 +44,7 @@ const router = createBrowserRouter([
       },
       {
         path: "admin",
-        element: <Admin/>
+        element: <Adlog/>
       }
     ],
   },
